@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NexaLearn Strategy Annex</title>
+<meta name="description" content="NexaLearn — Deal Strategy & Commercial Proposal (Yuno Sales Challenge)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f7f9; --paper:#ffffff; --ink:#1b2430; --muted:#5b6675; --line:#e2e6eb;
+  --brand:#1f3a5f; --brand-soft:#e8eef6; --th:#1f3a5f; --th-ink:#ffffff; --zebra:#fafbfc;
+  --D:#1f6fb2; --C:#6b4fa3; --P:#1e8449; --H:#c0392b;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f141a; --paper:#161d26; --ink:#e6ebf1; --muted:#9aa6b4; --line:#2a3441;
+    --brand:#8fb4e3; --brand-soft:#1d2a3a; --th:#22344b; --th-ink:#e6ebf1; --zebra:#19212b;
+    --D:#6fb0ea; --C:#b39ae6; --P:#5cc98a; --H:#ef7f73;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;}
+a{color:var(--brand)}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);max-width:1240px;margin:0 auto;gap:32px;padding:32px 24px}
+nav{position:sticky;top:24px;align-self:start;font-size:14px}
+nav .brand{font-weight:700;color:var(--brand);margin-bottom:12px;letter-spacing:.02em}
+nav ol{list-style:none;padding:0;margin:0 0 20px;border-left:2px solid var(--line)}
+nav li a{display:block;padding:6px 12px;color:var(--muted);text-decoration:none;border-left:2px solid transparent;margin-left:-2px}
+nav li a:hover,nav li a.active{color:var(--brand);border-left-color:var(--brand)}
+.dl{display:flex;flex-direction:column;gap:8px}
+.btn{display:inline-block;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);text-decoration:none;font-weight:500;font-size:13px}
+.btn:hover{border-color:var(--brand);color:var(--brand)}
+main{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:44px 52px;min-width:0}
+header h1{margin:0 0 6px;font-size:30px;line-height:1.2;color:var(--brand)}
+header .sub{color:var(--muted);font-size:14px;padding-bottom:18px;border-bottom:2px solid var(--brand);margin-bottom:22px}
+.legend{background:var(--brand-soft);border-radius:10px;padding:12px 16px;font-size:14px}
+section{margin-top:40px;scroll-margin-top:20px}
+h2{font-size:22px;color:var(--brand);margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+h3{font-size:16.5px;color:var(--brand);margin:26px 0 10px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin-bottom:6px}
+.tbl{overflow-x:auto;margin:6px 0 18px;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:560px}
+th{background:var(--th);color:var(--th-ink);text-align:left;font-weight:600;padding:9px 11px;vertical-align:bottom}
+td{padding:9px 11px;border-top:1px solid var(--line);vertical-align:top}
+tbody tr:nth-child(even) td{background:var(--zebra)}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;line-height:1;padding:3px 5px;border-radius:4px;margin-left:3px;vertical-align:1px;color:#fff}
+.tag-D{background:var(--D)} .tag-C{background:var(--C)} .tag-P{background:var(--P)} .tag-H{background:var(--H)}
+sup a{text-decoration:none;font-size:11px}
+.sources{font-size:13px;color:var(--muted);word-break:break-word}
+.sources li:target{background:var(--brand-soft);border-radius:4px}
+footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr;padding:16px;gap:16px}
+  nav{position:static}
+  nav ol{display:none}
+  .dl{flex-direction:row;flex-wrap:wrap}
+  main{padding:24px 18px;border-radius:10px}
+  header h1{font-size:24px}
+}
+@media print{
+  body{background:#fff} nav{display:none} .layout{display:block;padding:0}
+  main{border:0;padding:0} .tbl{overflow:visible;border:0} table{min-width:0}
+  section{break-inside:auto} tr{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav>
+  <div class="brand">NexaLearn × Yuno</div>
+  <ol><li><a href="#s-1-method">1. Method</a></li><li><a href="#s-2-options-considered">2. Options considered</a></li><li><a href="#s-3-key-decisions-and-why">3. Key decisions and why</a></li><li><a href="#s-4-what-the-data-checks-revealed">4. What the data checks revealed</a></li><li><a href="#s-5-limits">5. Limits</a></li></ol>
+  <div class="dl">
+    <a class="btn" href="index.html">← Back to the proposal</a><a class="btn" href="Annex_How_This_Strategy_Was_Built.pdf" download>⬇ Download annex (PDF)</a>
+  </div>
+</nav>
+<main>
+<header>
+  <h1>Annex — How This Strategy Was Built</h1>
+  <div class="sub"><em>Candidate submission — Yuno Sales Challenge. This annex explains the reasoning behind the proposal and how AI was used to support it.</em></div>
+</header>
+<section id="s-1-method"><h2>1. Method</h2>
+<ul><li><strong>Read and reconcile first.</strong> Every figure in the dossier was cross-checked before use. Six inconsistencies were found and turned into questions for NexaLearn (Section 1), not ignored.</li><li><strong>Verify outside the dossier.</strong> Public sources were checked live: provider price lists (Stripe, Paystack, Xendit, Razorpay), Visa’s current dispute-monitoring rules, Yuno’s documentation and published case studies.</li><li><strong>Tag every claim.</strong> <span class="tag tag-D" title="Dossier data">D</span> dossier, <span class="tag tag-C" title="Our calculation from dossier data">C</span> calculation, <span class="tag tag-P" title="Public source">P</span> public source, <span class="tag tag-H" title="Hypothesis to validate">H</span> hypothesis. No assumption is presented as a fact.</li><li><strong>AI as a tool; decisions stay human.</strong> AI was used to extract data, check arithmetic, research and verify sources, build the Excel model and draft text. The strategic choices below were made and challenged by me at each step.</li></ul>
+</section>
+<section id="s-2-options-considered"><h2>2. Options considered</h2>
+<div class="tbl"><table><colgroup><col style="width:35.4%"><col style="width:19.8%"><col style="width:44.8%"></colgroup><thead><tr><th>Option</th><th>Verdict</th><th>Why</th></tr></thead><tbody><tr><td>A. Replace Stripe entirely</td><td>Discarded</td><td>Not feasible before the 1 August renewal; 68% of revenue sits in Stripe Billing subscriptions</td></tr><tr><td>B. Renew Stripe now, revisit Yuno later</td><td>Discarded</td><td>Locks NexaLearn into 12 months on Stripe’s terms; the deal goes cold</td></tr><tr><td>C. Full orchestration in one go</td><td>End state, not starting point</td><td>Too much engineering load during a Q3 launch</td></tr><tr><td><strong>D. Phased orchestration on top of Stripe</strong></td><td><strong>Chosen as the base</strong></td><td>Proves value where revenue is lost, with minimal risk</td></tr><tr><td><strong>E. New markets on Yuno from day one</strong></td><td><strong>Added</strong></td><td>Directly answers the CEO’s expansion goal</td></tr><tr><td><strong>F. Failover from go-live</strong></td><td><strong>Added</strong></td><td>Answers the March outage and the CTO’s resilience concern</td></tr></tbody></table></div>
+</section>
+<section id="s-3-key-decisions-and-why"><h2>3. Key decisions and why</h2>
+<ol><li><strong>From "Stripe or Yuno" to "Stripe + Yuno".</strong> Competing on Stripe’s price is a losing game. Making Stripe’s discount part of our case neutralises its main argument, and any further Stripe discount also lowers our scenario’s cost.</li><li><strong>Selling order: Priya → Rajiv → Amara → Tan.</strong> Financial negotiation is where deals usually stall. We reach the CFO with two internal sponsors — Payments and the CTO/co-founder — already behind the pilot.</li><li><strong>Honest economics.</strong> On fees alone, Stripe + Yuno roughly matches a Stripe-only renewal. We say so upfront and build the case on recovered revenue, using a risk-adjusted scenario a CFO can trust.</li><li><strong>No guarantees.</strong> The dossier gives no basis to promise an approval-rate uplift, so we don’t. A success fee shares the risk instead.</li><li><strong>Price at the bottom of the range, not below it.</strong> Competitive without giving the technology away; a volume tier is held back for the close.</li><li><strong>The pilot evolved over three iterations.</strong> First draft: sign a contract, then pilot — rejected because results would arrive after the decision. Second: run a full 60-day pilot first, with the commitment pre-agreed if it succeeds. Final: a free pilot (Option A), signalling a long-term partnership. Option B was redesigned after calculating that a 50% pilot discount is worth only ~$5K to the client: the real difference between the options had to be the commitment, not the price.</li><li><strong>Let customers speak.</strong> Public case studies were matched to each stakeholder (Open English, an edtech company, for the CFO). Reference calls are offered only with those customers’ consent.</li></ol>
+</section>
+<section id="s-4-what-the-data-checks-revealed"><h2>4. What the data checks revealed</h2>
+<ul><li><strong>Volume:</strong> the baseline conflicts across sources ($89M / $95M / $103M), and the transaction count cannot reach 2.1M with the stated price ranges (maximum ~1.29M).</li><li><strong>Stripe’s offer:</strong> its effective rate is ~3.2%, not 2.85%, and its claimed $240K saving does not reconcile with its own pricing.</li><li><strong>Hidden concentration:</strong> Stripe owns Paystack, so ~88% of volume depends on one group.</li><li><strong>Outdated rule:</strong> Visa’s dispute-monitoring rules have changed since the threshold cited in the dossier.</li><li><strong>Counter-intuitive cost:</strong> Indonesian wallets approve better but cost more than cards, so routing to them raises revenue, not savings.</li></ul>
+</section>
+<section id="s-5-limits"><h2>5. Limits</h2>
+<p>All figures are illustrative and based on the dossier. Customer results are as published by Yuno and are not a forecast for NexaLearn. Items tagged <span class="tag tag-H" title="Hypothesis to validate">H</span> must be validated with NexaLearn and internally at Yuno.</p>
+</section>
+
+<footer>Figures are illustrative and tagged by origin. Customer results are as published by Yuno; no outcome is guaranteed.</footer>
+</main>
+</div>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('nav ol a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var y=window.scrollY+120, cur=0;
+    secs.forEach(function(s,i){ if(s && s.offsetTop<=y) cur=i; });
+    links.forEach(function(a,i){ a.classList.toggle('active', i===cur); });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+})();
+</script>
+</body>
+</html>
